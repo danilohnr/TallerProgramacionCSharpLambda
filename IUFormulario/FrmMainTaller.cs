@@ -65,5 +65,17 @@ namespace IUFormulario
                 TxtMensajeCajero.Text = ex.Message;
             }
         }
+
+        private void BtnArray_Click(object sender, EventArgs e)
+        {
+            string[] resultadoLista;
+            string mensaje = string.Empty;
+            resultadoLista = LogicaNegocio.Lista.ListaArray();
+            for (int i = 0; i < resultadoLista.Length; i++)
+            {
+                mensaje = mensaje + "--" + resultadoLista[i];
+            }
+            TxtListaArray.Text = mensaje;
+        }
     }
 }

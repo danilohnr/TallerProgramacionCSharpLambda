@@ -33,6 +33,8 @@
             this.TxtConsulta = new System.Windows.Forms.TextBox();
             this.TxtRetiro = new System.Windows.Forms.TextBox();
             this.TxtMensajeCajero = new System.Windows.Forms.TextBox();
+            this.BtnArray = new System.Windows.Forms.Button();
+            this.TxtListaArray = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // BtnConsulta
@@ -77,11 +79,30 @@
             this.TxtMensajeCajero.Size = new System.Drawing.Size(345, 69);
             this.TxtMensajeCajero.TabIndex = 4;
             // 
+            // BtnArray
+            // 
+            this.BtnArray.Location = new System.Drawing.Point(106, 244);
+            this.BtnArray.Name = "BtnArray";
+            this.BtnArray.Size = new System.Drawing.Size(75, 23);
+            this.BtnArray.TabIndex = 5;
+            this.BtnArray.Text = "Lista Array";
+            this.BtnArray.UseVisualStyleBackColor = true;
+            this.BtnArray.Click += new System.EventHandler(this.BtnArray_Click);
+            // 
+            // TxtListaArray
+            // 
+            this.TxtListaArray.Location = new System.Drawing.Point(219, 245);
+            this.TxtListaArray.Name = "TxtListaArray";
+            this.TxtListaArray.Size = new System.Drawing.Size(232, 23);
+            this.TxtListaArray.TabIndex = 6;
+            // 
             // FrmMainTaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TxtListaArray);
+            this.Controls.Add(this.BtnArray);
             this.Controls.Add(this.TxtMensajeCajero);
             this.Controls.Add(this.TxtRetiro);
             this.Controls.Add(this.TxtConsulta);
@@ -101,5 +122,7 @@
         private System.Windows.Forms.TextBox TxtConsulta;
         private System.Windows.Forms.TextBox TxtRetiro;
         private System.Windows.Forms.TextBox TxtMensajeCajero;
+        private System.Windows.Forms.Button BtnArray;
+        private System.Windows.Forms.TextBox TxtListaArray;
     }
 }
