@@ -19,5 +19,17 @@ namespace LogicaNegocio
 
             return miArrayDeNombresDePerros;
         }
+
+        public static List<string> ListaList()
+        {
+            List<string> personaNombres = new List<string>() 
+            {
+                "Danilo","Luis","Josué","Juan"
+            };
+            //personaNombres.Add("Danilo");
+            //personaNombres.Add("Luis");
+            return personaNombres;
+        }
     }
 }
+  

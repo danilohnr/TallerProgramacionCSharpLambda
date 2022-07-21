@@ -77,5 +77,10 @@ namespace IUFormulario
             }
             TxtListaArray.Text = mensaje;
         }
+
+        private void BtnList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
