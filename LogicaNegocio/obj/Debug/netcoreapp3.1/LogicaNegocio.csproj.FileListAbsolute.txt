@@ -1,0 +1,10 @@
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\LogicaNegocio\bin\Debug\netcoreapp3.1\LogicaNegocio.deps.json
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\LogicaNegocio\bin\Debug\netcoreapp3.1\LogicaNegocio.dll
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\LogicaNegocio\bin\Debug\netcoreapp3.1\LogicaNegocio.pdb
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\LogicaNegocio\obj\Debug\netcoreapp3.1\LogicaNegocio.csproj.AssemblyReference.cache
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\LogicaNegocio\obj\Debug\netcoreapp3.1\LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\LogicaNegocio\obj\Debug\netcoreapp3.1\LogicaNegocio.AssemblyInfoInputs.cache
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\LogicaNegocio\obj\Debug\netcoreapp3.1\LogicaNegocio.AssemblyInfo.cs
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\LogicaNegocio\obj\Debug\netcoreapp3.1\LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\LogicaNegocio\obj\Debug\netcoreapp3.1\LogicaNegocio.dll
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\LogicaNegocio\obj\Debug\netcoreapp3.1\LogicaNegocio.pdb
