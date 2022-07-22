@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IUFormulario", "IUFormulario\IUFormulario.csproj", "{077C3154-82D7-44D7-9933-4A663A3BE8F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicaNegocio", "LogicaNegocio\LogicaNegocio.csproj", "{AEFACA63-CC6B-4F5C-8498-5FCACD1B5A27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicaNegocio", "LogicaNegocio\LogicaNegocio.csproj", "{AEFACA63-CC6B-4F5C-8498-5FCACD1B5A27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{4C723B22-C81F-4D50-AAC2-0FB539258BCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AEFACA63-CC6B-4F5C-8498-5FCACD1B5A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEFACA63-CC6B-4F5C-8498-5FCACD1B5A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEFACA63-CC6B-4F5C-8498-5FCACD1B5A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C723B22-C81F-4D50-AAC2-0FB539258BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C723B22-C81F-4D50-AAC2-0FB539258BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C723B22-C81F-4D50-AAC2-0FB539258BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C723B22-C81F-4D50-AAC2-0FB539258BCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
