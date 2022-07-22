@@ -12,6 +12,10 @@ namespace IUFormulario
     {
         //Variable global que podrá acceder a los métodos definidos en el formulario
         LogicaNegocio.Cajero _objCajero = new LogicaNegocio.Cajero();
+        //Variable global de la lista de personas para evitar que se pierda la información
+        List<Modelo.Persona> _listaPersonas = new List<Modelo.Persona>();
+        //Cadena para usar como separador de los datos en la lista de personas
+        private const string SEPARADOR = "--";
         public FrmMainTaller()
         {
             InitializeComponent();
@@ -77,9 +81,18 @@ namespace IUFormulario
                     MontoTransaccion = Convert.ToDecimal(TxtRetiro.Text),
                     Mensaje = mensajeCajero
                 };
-                //3.Agregar el objeto Persona a una lista de personas
-
+                //3.Agregar el objeto Persona a una lista de personas                
+                _listaPersonas.Add(objPersona);
                 //4.Agregar esa lista de personas al campo de texto TxtListaPersonas
+                foreach (var item in _listaPersonas)
+                {
+                    TxtListaPersonas.Text = "";
+                    TxtListaPersonas.Text += item.Identificacion + SEPARADOR;
+                    TxtListaPersonas.Text += item.FechaTransaccion + SEPARADOR;
+                    TxtListaPersonas.Text += item.Nombre + " " + item.PrimerApellido + " " + item.SegundoApellido + SEPARADOR;
+                    TxtListaPersonas.Text += item.MontoTransaccion + SEPARADOR;
+                    TxtListaPersonas.Text += item.Mensaje + SEPARADOR;
+                }
             }
             catch (Exception ex)
             {
