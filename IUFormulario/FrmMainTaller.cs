@@ -30,7 +30,7 @@ namespace IUFormulario
             decimal error = 8 / cero;
         }
 
-        private void RetirarDinero()
+        private string RetirarDinero()
         {
             //Recuperar el valor del cuadro de texto TxtRetiro
             string montoRetiro = TxtRetiro.Text;
@@ -43,6 +43,7 @@ namespace IUFormulario
             //Mostrar en el cuadro de texto TxtConsulta lo que queda disponible
             TxtConsulta.Text = valorRetornado.ToString();
             TxtMensajeCajero.Text = mensajeRetornado;
+            return mensajeRetornado;
         }
 
         private void BtnRetiro_Click(object sender, EventArgs e)
@@ -57,8 +58,28 @@ namespace IUFormulario
                 {
                     TxtMensajeCajero.Text = ex.Message;
                 }
-                RetirarDinero();
-                
+                //Capturar el mensaje del método RetirarDinero()
+                string mensajeCajero = string.Empty;
+                mensajeCajero = RetirarDinero();
+                //1.Recuperar fecha
+                DateTime fechaTransaccion = DateTime.Now;
+                //2.Crear objeto persona
+                //Modelo.Persona objPersona = new Modelo.Persona();
+                //objPersona.Identificacion = TxtIdentificacion.Text;
+                //Y aquí seguiría la captura del resto de los datos del usuario
+                //Pero también se puede hacer así:
+                Modelo.Persona objPersona = new Modelo.Persona {
+                    Identificacion = TxtIdentificacion.Text,
+                    Nombre = TxtNombre.Text,
+                    PrimerApellido = TxtApellido1.Text,
+                    SegundoApellido = TxtApellido2.Text,
+                    FechaTransaccion = fechaTransaccion,
+                    MontoTransaccion = Convert.ToDecimal(TxtRetiro.Text),
+                    Mensaje = mensajeCajero
+                };
+                //3.Agregar el objeto Persona a una lista de personas
+
+                //4.Agregar esa lista de personas al campo de texto TxtListaPersonas
             }
             catch (Exception ex)
             {
