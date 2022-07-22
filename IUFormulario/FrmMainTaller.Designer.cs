@@ -38,6 +38,7 @@
             this.BtnList = new System.Windows.Forms.Button();
             this.TxtList = new System.Windows.Forms.TextBox();
             this.GrbPractica = new System.Windows.Forms.GroupBox();
+            this.TxtListaPersonas = new System.Windows.Forms.TextBox();
             this.TxtApellido2 = new System.Windows.Forms.TextBox();
             this.TxtApellido1 = new System.Windows.Forms.TextBox();
             this.TxtNombre = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@
             this.LblApellido1 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
             this.LblIdentificacion = new System.Windows.Forms.Label();
-            this.TxtListaPersonas = new System.Windows.Forms.TextBox();
             this.GrbPractica.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +86,7 @@
             // 
             // TxtMensajeCajero
             // 
-            this.TxtMensajeCajero.Location = new System.Drawing.Point(106, 156);
+            this.TxtMensajeCajero.Location = new System.Drawing.Point(102, 100);
             this.TxtMensajeCajero.Multiline = true;
             this.TxtMensajeCajero.Name = "TxtMensajeCajero";
             this.TxtMensajeCajero.Size = new System.Drawing.Size(345, 69);
@@ -94,7 +94,7 @@
             // 
             // BtnArray
             // 
-            this.BtnArray.Location = new System.Drawing.Point(106, 244);
+            this.BtnArray.Location = new System.Drawing.Point(102, 188);
             this.BtnArray.Name = "BtnArray";
             this.BtnArray.Size = new System.Drawing.Size(75, 23);
             this.BtnArray.TabIndex = 5;
@@ -104,14 +104,14 @@
             // 
             // TxtListaArray
             // 
-            this.TxtListaArray.Location = new System.Drawing.Point(219, 245);
+            this.TxtListaArray.Location = new System.Drawing.Point(215, 189);
             this.TxtListaArray.Name = "TxtListaArray";
             this.TxtListaArray.Size = new System.Drawing.Size(232, 23);
             this.TxtListaArray.TabIndex = 6;
             // 
             // BtnList
             // 
-            this.BtnList.Location = new System.Drawing.Point(106, 294);
+            this.BtnList.Location = new System.Drawing.Point(102, 238);
             this.BtnList.Name = "BtnList";
             this.BtnList.Size = new System.Drawing.Size(75, 23);
             this.BtnList.TabIndex = 7;
@@ -121,7 +121,7 @@
             // 
             // TxtList
             // 
-            this.TxtList.Location = new System.Drawing.Point(219, 294);
+            this.TxtList.Location = new System.Drawing.Point(215, 238);
             this.TxtList.Name = "TxtList";
             this.TxtList.Size = new System.Drawing.Size(232, 23);
             this.TxtList.TabIndex = 8;
@@ -139,12 +139,20 @@
             this.GrbPractica.Controls.Add(this.LblNombre);
             this.GrbPractica.Controls.Add(this.BtnRetiro);
             this.GrbPractica.Controls.Add(this.LblIdentificacion);
-            this.GrbPractica.Location = new System.Drawing.Point(102, 341);
+            this.GrbPractica.Location = new System.Drawing.Point(98, 285);
             this.GrbPractica.Name = "GrbPractica";
-            this.GrbPractica.Size = new System.Drawing.Size(622, 229);
+            this.GrbPractica.Size = new System.Drawing.Size(690, 229);
             this.GrbPractica.TabIndex = 9;
             this.GrbPractica.TabStop = false;
             this.GrbPractica.Text = "Practica 4";
+            // 
+            // TxtListaPersonas
+            // 
+            this.TxtListaPersonas.Location = new System.Drawing.Point(27, 126);
+            this.TxtListaPersonas.Multiline = true;
+            this.TxtListaPersonas.Name = "TxtListaPersonas";
+            this.TxtListaPersonas.Size = new System.Drawing.Size(643, 84);
+            this.TxtListaPersonas.TabIndex = 8;
             // 
             // TxtApellido2
             // 
@@ -209,14 +217,6 @@
             this.LblIdentificacion.Size = new System.Drawing.Size(82, 15);
             this.LblIdentificacion.TabIndex = 0;
             this.LblIdentificacion.Text = "Identificación:";
-            // 
-            // TxtListaPersonas
-            // 
-            this.TxtListaPersonas.Location = new System.Drawing.Point(27, 126);
-            this.TxtListaPersonas.Multiline = true;
-            this.TxtListaPersonas.Name = "TxtListaPersonas";
-            this.TxtListaPersonas.Size = new System.Drawing.Size(567, 84);
-            this.TxtListaPersonas.TabIndex = 8;
             // 
             // FrmMainTaller
             // 

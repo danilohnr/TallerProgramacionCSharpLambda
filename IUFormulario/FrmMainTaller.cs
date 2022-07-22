@@ -84,14 +84,15 @@ namespace IUFormulario
                 //3.Agregar el objeto Persona a una lista de personas                
                 _listaPersonas.Add(objPersona);
                 //4.Agregar esa lista de personas al campo de texto TxtListaPersonas
+                TxtListaPersonas.Text = "";
                 foreach (var item in _listaPersonas)
                 {
-                    TxtListaPersonas.Text = "";
                     TxtListaPersonas.Text += item.Identificacion + SEPARADOR;
                     TxtListaPersonas.Text += item.FechaTransaccion + SEPARADOR;
                     TxtListaPersonas.Text += item.Nombre + " " + item.PrimerApellido + " " + item.SegundoApellido + SEPARADOR;
                     TxtListaPersonas.Text += item.MontoTransaccion + SEPARADOR;
                     TxtListaPersonas.Text += item.Mensaje + SEPARADOR;
+                    TxtListaPersonas.Text += Environment.NewLine;
                 }
             }
             catch (Exception ex)
