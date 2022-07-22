@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "IUFormulario/1.0.0": {
         "dependencies": {
-          "LogicaNegocio": "1.0.0"
+          "LogicaNegocio": "1.0.0",
+          "Modelo": "1.0.0"
         },
         "runtime": {
           "IUFormulario.dll": {}
@@ -17,6 +18,11 @@
       "LogicaNegocio/1.0.0": {
         "runtime": {
           "LogicaNegocio.dll": {}
+        }
+      },
+      "Modelo/1.0.0": {
+        "runtime": {
+          "Modelo.dll": {}
         }
       }
     }
@@ -28,6 +34,11 @@
       "sha512": ""
     },
     "LogicaNegocio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Modelo/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

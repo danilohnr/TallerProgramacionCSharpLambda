@@ -18,3 +18,5 @@ C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\IUFormulario\obj\Debug\net
 C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\IUFormulario\bin\Debug\netcoreapp3.1\LogicaNegocio.dll
 C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\IUFormulario\bin\Debug\netcoreapp3.1\LogicaNegocio.pdb
 C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\IUFormulario\obj\Debug\netcoreapp3.1\IUFormulario.csproj.CopyComplete
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\IUFormulario\bin\Debug\netcoreapp3.1\Modelo.dll
+C:\Users\danil\Downloads\ProyectosCSharp\SOLTallerGMG\IUFormulario\bin\Debug\netcoreapp3.1\Modelo.pdb

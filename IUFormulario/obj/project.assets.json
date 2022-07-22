@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/LogicaNegocio.dll": {}
         }
+      },
+      "Modelo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Modelo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Modelo.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../LogicaNegocio/LogicaNegocio.csproj",
       "msbuildProject": "../LogicaNegocio/LogicaNegocio.csproj"
+    },
+    "Modelo/1.0.0": {
+      "type": "project",
+      "path": "../Modelo/Modelo.csproj",
+      "msbuildProject": "../Modelo/Modelo.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "LogicaNegocio >= 1.0.0"
+      "LogicaNegocio >= 1.0.0",
+      "Modelo >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -60,6 +76,9 @@
           "projectReferences": {
             "C:\\Users\\danil\\Downloads\\ProyectosCSharp\\SOLTallerGMG\\LogicaNegocio\\LogicaNegocio.csproj": {
               "projectPath": "C:\\Users\\danil\\Downloads\\ProyectosCSharp\\SOLTallerGMG\\LogicaNegocio\\LogicaNegocio.csproj"
+            },
+            "C:\\Users\\danil\\Downloads\\ProyectosCSharp\\SOLTallerGMG\\Modelo\\Modelo.csproj": {
+              "projectPath": "C:\\Users\\danil\\Downloads\\ProyectosCSharp\\SOLTallerGMG\\Modelo\\Modelo.csproj"
             }
           }
         }
