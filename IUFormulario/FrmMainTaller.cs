@@ -80,7 +80,13 @@ namespace IUFormulario
 
         private void BtnList_Click(object sender, EventArgs e)
         {
-
+            List<string> resultadoList = LogicaNegocio.Lista.ListaList();
+            string mensaje = string.Empty;
+            foreach (var objLista in resultadoList)
+            {
+                mensaje = mensaje + "--" + objLista.ToString();
+            }
+            TxtList.Text = mensaje;
         }
     }
 }

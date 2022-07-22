@@ -131,7 +131,7 @@
             this.Controls.Add(this.BtnConsulta);
             this.Name = "FrmMainTaller";
             this.Text = "Taller";
-            this.Load += new System.EventHandler(this.FrmMainTaller_Load);
+            //this.Load += new System.EventHandler(this.FrmMainTaller);
             this.ResumeLayout(false);
             this.PerformLayout();
 
