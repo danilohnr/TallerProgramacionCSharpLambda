@@ -47,7 +47,11 @@
             this.LblApellido1 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
             this.LblIdentificacion = new System.Windows.Forms.Label();
+            this.GrbPracticaGenericos = new System.Windows.Forms.GroupBox();
+            this.BtnObjeto = new System.Windows.Forms.Button();
+            this.BtnGenerico = new System.Windows.Forms.Button();
             this.GrbPractica.SuspendLayout();
+            this.GrbPracticaGenericos.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnConsulta
@@ -62,7 +66,7 @@
             // 
             // BtnRetiro
             // 
-            this.BtnRetiro.Location = new System.Drawing.Point(295, 20);
+            this.BtnRetiro.Location = new System.Drawing.Point(255, 20);
             this.BtnRetiro.Name = "BtnRetiro";
             this.BtnRetiro.Size = new System.Drawing.Size(75, 23);
             this.BtnRetiro.TabIndex = 1;
@@ -79,7 +83,7 @@
             // 
             // TxtRetiro
             // 
-            this.TxtRetiro.Location = new System.Drawing.Point(412, 20);
+            this.TxtRetiro.Location = new System.Drawing.Point(336, 20);
             this.TxtRetiro.Name = "TxtRetiro";
             this.TxtRetiro.Size = new System.Drawing.Size(100, 23);
             this.TxtRetiro.TabIndex = 3;
@@ -128,6 +132,7 @@
             // 
             // GrbPractica
             // 
+            this.GrbPractica.Controls.Add(this.GrbPracticaGenericos);
             this.GrbPractica.Controls.Add(this.TxtListaPersonas);
             this.GrbPractica.Controls.Add(this.TxtApellido2);
             this.GrbPractica.Controls.Add(this.TxtApellido1);
@@ -218,6 +223,35 @@
             this.LblIdentificacion.TabIndex = 0;
             this.LblIdentificacion.Text = "Identificación:";
             // 
+            // GrbPracticaGenericos
+            // 
+            this.GrbPracticaGenericos.Controls.Add(this.BtnGenerico);
+            this.GrbPracticaGenericos.Controls.Add(this.BtnObjeto);
+            this.GrbPracticaGenericos.Location = new System.Drawing.Point(442, 20);
+            this.GrbPracticaGenericos.Name = "GrbPracticaGenericos";
+            this.GrbPracticaGenericos.Size = new System.Drawing.Size(228, 100);
+            this.GrbPracticaGenericos.TabIndex = 9;
+            this.GrbPracticaGenericos.TabStop = false;
+            this.GrbPracticaGenericos.Text = "Practica 5";
+            // 
+            // BtnObjeto
+            // 
+            this.BtnObjeto.Location = new System.Drawing.Point(13, 22);
+            this.BtnObjeto.Name = "BtnObjeto";
+            this.BtnObjeto.Size = new System.Drawing.Size(127, 23);
+            this.BtnObjeto.TabIndex = 0;
+            this.BtnObjeto.Text = "Ejemplo Object";
+            this.BtnObjeto.UseVisualStyleBackColor = true;
+            // 
+            // BtnGenerico
+            // 
+            this.BtnGenerico.Location = new System.Drawing.Point(13, 51);
+            this.BtnGenerico.Name = "BtnGenerico";
+            this.BtnGenerico.Size = new System.Drawing.Size(127, 23);
+            this.BtnGenerico.TabIndex = 1;
+            this.BtnGenerico.Text = "Ejemplo Generico";
+            this.BtnGenerico.UseVisualStyleBackColor = true;
+            // 
             // FrmMainTaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -235,6 +269,7 @@
             this.Text = "Taller";
             this.GrbPractica.ResumeLayout(false);
             this.GrbPractica.PerformLayout();
+            this.GrbPracticaGenericos.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,5 +296,8 @@
         private System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.Label LblIdentificacion;
         private System.Windows.Forms.TextBox TxtListaPersonas;
+        private System.Windows.Forms.GroupBox GrbPracticaGenericos;
+        private System.Windows.Forms.Button BtnGenerico;
+        private System.Windows.Forms.Button BtnObjeto;
     }
 }
