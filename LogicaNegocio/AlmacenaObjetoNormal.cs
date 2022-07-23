@@ -16,5 +16,15 @@ namespace LogicaNegocio
             //Inicializar el arreglo
             _datosElemento = new Object[tamanno];
         }
+        //Métodos
+        public void Agregar(Object obj) 
+        {
+            _datosElemento[_contador] = obj;
+            _contador++;
+        }
+        public Object ObtenerElemento(int posicion) 
+        {
+            return _datosElemento[posicion];
+        }
     }    
 }
