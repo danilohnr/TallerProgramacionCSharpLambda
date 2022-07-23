@@ -160,6 +160,7 @@ namespace IUFormulario
             objAlmacenaObjetoNormal.Agregar("Rebeca");
             objAlmacenaObjetoNormal.Agregar("Neffer");
             string nombrePersona = (string)objAlmacenaObjetoNormal.ObtenerElemento(1);
+            //int nombrePersona = (int)objAlmacenaObjetoNormal.ObtenerElemento(1);
             MessageBox.Show(nombrePersona);
         }
 
