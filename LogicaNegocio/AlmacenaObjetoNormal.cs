@@ -11,6 +11,10 @@ namespace LogicaNegocio
         private readonly Object[] _datosElemento;
         private int _contador = 0;
         //Constructor
+        /// <summary>
+        /// Constructor que recibe por parámetro el tamaño del arreglo
+        /// </summary>
+        /// <param name="tamanno">Entero para inicializar el arreglo</param>
         public AlmacenaObjetoNormal(int tamanno)
         {
             //Inicializar el arreglo

@@ -152,7 +152,15 @@ namespace IUFormulario
 
         private void LlamarEjemploNoGenerico() 
         {
-            
+            LogicaNegocio.AlmacenaObjetoNormal objAlmacenaObjetoNormal = new LogicaNegocio.AlmacenaObjetoNormal(4);
+            //objAlmacenaObjetoNormal.Agregar(1);
+            //objAlmacenaObjetoNormal.Agregar(new Modelo.Persona);
+            objAlmacenaObjetoNormal.Agregar("Danilo");
+            objAlmacenaObjetoNormal.Agregar("Juan");
+            objAlmacenaObjetoNormal.Agregar("Rebeca");
+            objAlmacenaObjetoNormal.Agregar("Neffer");
+            string nombrePersona = (string)objAlmacenaObjetoNormal.ObtenerElemento(1);
+            MessageBox.Show(nombrePersona);
         }
 
         private void LlamarEjemploGenerico() 
