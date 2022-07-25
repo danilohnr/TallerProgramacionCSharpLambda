@@ -34,14 +34,15 @@ namespace LogicaNegocio
         public static LinkedList<int> EjemploLinkedList() 
         {
             LinkedList<int> numerosLinkedList = new LinkedList<int>();
+            LinkedList<int> numerosLinkedListLast = new LinkedList<int>();
             int[] arreglo = new int[6] {10,7,4,2,0,6 };
             foreach (var itemNumero in arreglo)
             {
-                numerosLinkedList.AddFirst(itemNumero);
-                //numerosLinkedList.AddLast(itemNumero);
+                //numerosLinkedList.AddFirst(itemNumero);
+                numerosLinkedListLast.AddLast(itemNumero);
             }
-            numerosLinkedList.Remove(7);
-            return numerosLinkedList;
+            numerosLinkedListLast.Remove(7);
+            return numerosLinkedListLast;
         }
     }
 }
