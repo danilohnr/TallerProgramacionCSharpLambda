@@ -56,6 +56,18 @@ namespace LogicaNegocio
             numerosCola.Dequeue();
             return numerosCola;
         }
+
+        public static Stack<int> Pila() 
+        {
+            Stack<int> numerosPila = new Stack<int>();
+            int[] arreglo = new int[6] { 10, 7, 4, 2, 0, 6 };
+            foreach (var item in arreglo)
+            {
+                numerosPila.Push(item);
+            }
+            numerosPila.Pop();
+            return numerosPila;
+        }
     }
 }
   

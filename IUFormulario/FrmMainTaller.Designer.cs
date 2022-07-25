@@ -54,6 +54,8 @@
             this.TxtLinkedList = new System.Windows.Forms.TextBox();
             this.BtnQueue = new System.Windows.Forms.Button();
             this.TxtQueue = new System.Windows.Forms.TextBox();
+            this.BtnStack = new System.Windows.Forms.Button();
+            this.TxtStack = new System.Windows.Forms.TextBox();
             this.GrbPractica.SuspendLayout();
             this.GrbPracticaGenericos.SuspendLayout();
             this.SuspendLayout();
@@ -287,16 +289,35 @@
             // 
             // TxtQueue
             // 
-            this.TxtQueue.Location = new System.Drawing.Point(582, 218);
+            this.TxtQueue.Location = new System.Drawing.Point(580, 217);
             this.TxtQueue.Name = "TxtQueue";
             this.TxtQueue.Size = new System.Drawing.Size(186, 23);
             this.TxtQueue.TabIndex = 13;
+            // 
+            // BtnStack
+            // 
+            this.BtnStack.Location = new System.Drawing.Point(474, 248);
+            this.BtnStack.Name = "BtnStack";
+            this.BtnStack.Size = new System.Drawing.Size(75, 23);
+            this.BtnStack.TabIndex = 14;
+            this.BtnStack.Text = "Stack";
+            this.BtnStack.UseVisualStyleBackColor = true;
+            this.BtnStack.Click += new System.EventHandler(this.BtnStack_Click);
+            // 
+            // TxtStack
+            // 
+            this.TxtStack.Location = new System.Drawing.Point(580, 248);
+            this.TxtStack.Name = "TxtStack";
+            this.TxtStack.Size = new System.Drawing.Size(186, 23);
+            this.TxtStack.TabIndex = 15;
             // 
             // FrmMainTaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 582);
+            this.Controls.Add(this.TxtStack);
+            this.Controls.Add(this.BtnStack);
             this.Controls.Add(this.TxtQueue);
             this.Controls.Add(this.BtnQueue);
             this.Controls.Add(this.TxtLinkedList);
@@ -347,5 +368,7 @@
         private System.Windows.Forms.TextBox TxtLinkedList;
         private System.Windows.Forms.Button BtnQueue;
         private System.Windows.Forms.TextBox TxtQueue;
+        private System.Windows.Forms.Button BtnStack;
+        private System.Windows.Forms.TextBox TxtStack;
     }
 }

@@ -243,5 +243,16 @@ namespace IUFormulario
             }
             TxtQueue.Text = mensaje;
         }
+
+        private void BtnStack_Click(object sender, EventArgs e)
+        {
+            var objStack = LogicaNegocio.Lista.Pila();
+            string mensaje = string.Empty;
+            foreach (var item in objStack)
+            {
+                mensaje = mensaje + " " + item;
+            }
+            TxtStack.Text = mensaje;
+        }
     }
 }
