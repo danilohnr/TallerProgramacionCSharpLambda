@@ -221,5 +221,16 @@ namespace IUFormulario
             Modelo.Persona objPersona = (Modelo.Persona)objAlmacenaObjetoGenericoPersonas.ObtenerElemento(1);
             MessageBox.Show(objPersona.Nombre + " " + objPersona.Identificacion);
         }
+
+        private void BtnLinkedList_Click(object sender, EventArgs e)
+        {
+            var objLinkedList = LogicaNegocio.Lista.EjemploLinkedList();
+            string mensaje = string.Empty;
+            foreach (var item in objLinkedList)
+            {
+                mensaje = mensaje + " " + item;
+            }
+            TxtLinkedList.Text = mensaje;
+        }
     }
 }
