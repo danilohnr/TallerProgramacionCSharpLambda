@@ -65,7 +65,10 @@ namespace LogicaNegocio
             {
                 numerosPila.Push(item);
             }
-            numerosPila.Pop();
+            if (numerosPila.Count > 0)
+            {
+                numerosPila.Pop();
+            }            
             return numerosPila;
         }
     }
