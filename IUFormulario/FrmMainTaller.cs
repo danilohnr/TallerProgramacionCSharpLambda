@@ -189,7 +189,13 @@ namespace IUFormulario
 
         private void LlamarEjemploGenerico() 
         {
-            
+            LogicaNegocio.AlmacenaObjetoGenerico<string> objAlmacenaObjetoGenerico = new LogicaNegocio.AlmacenaObjetoGenerico<string>(4);
+            objAlmacenaObjetoGenerico.Agregar("Danilo");
+            objAlmacenaObjetoGenerico.Agregar("Juan");
+            objAlmacenaObjetoGenerico.Agregar("Rebeca");
+            objAlmacenaObjetoGenerico.Agregar("Neffer");
+            string nombrePersona = objAlmacenaObjetoGenerico.ObtenerElemento(1);
+            MessageBox.Show(nombrePersona);
         }
     }
 }
