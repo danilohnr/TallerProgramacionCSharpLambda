@@ -196,6 +196,30 @@ namespace IUFormulario
             objAlmacenaObjetoGenerico.Agregar("Neffer");
             string nombrePersona = objAlmacenaObjetoGenerico.ObtenerElemento(1);
             MessageBox.Show(nombrePersona);
+            //Otro ejemplo de Object compuesto
+            LogicaNegocio.AlmacenaObjetoGenerico<Modelo.Persona> objAlmacenaObjetoGenericoPersonas = new LogicaNegocio.AlmacenaObjetoGenerico<Modelo.Persona>(4);
+            objAlmacenaObjetoGenericoPersonas.Agregar(new Modelo.Persona
+            {
+                Identificacion = "001-080980-010",
+                Nombre = "Danilo"
+            });
+            objAlmacenaObjetoGenericoPersonas.Agregar(new Modelo.Persona
+            {
+                Identificacion = "002-080980-010",
+                Nombre = "Juan"
+            });
+            objAlmacenaObjetoGenericoPersonas.Agregar(new Modelo.Persona
+            {
+                Identificacion = "003-080980-010",
+                Nombre = "Rebeca"
+            });
+            objAlmacenaObjetoGenericoPersonas.Agregar(new Modelo.Persona
+            {
+                Identificacion = "004-080980-010",
+                Nombre = "Neffer"
+            });
+            Modelo.Persona objPersona = (Modelo.Persona)objAlmacenaObjetoGenericoPersonas.ObtenerElemento(1);
+            MessageBox.Show(objPersona.Nombre + " " + objPersona.Identificacion);
         }
     }
 }
