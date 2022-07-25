@@ -44,6 +44,18 @@ namespace LogicaNegocio
             numerosLinkedListLast.Remove(7);
             return numerosLinkedListLast;
         }
+
+        public static Queue<int> Cola() 
+        {
+            Queue<int> numerosCola = new Queue<int>();
+            int[] arreglo = new int[6] { 10, 7, 4, 2, 0, 6 };
+            foreach (var itemNumero in arreglo)
+            {
+                numerosCola.Enqueue(itemNumero);
+            }
+            numerosCola.Dequeue();
+            return numerosCola;
+        }
     }
 }
   

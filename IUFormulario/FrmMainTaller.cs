@@ -232,5 +232,16 @@ namespace IUFormulario
             }
             TxtLinkedList.Text = mensaje;
         }
+
+        private void BtnQueue_Click(object sender, EventArgs e)
+        {
+            var objQueue = LogicaNegocio.Lista.Cola();
+            string mensaje = string.Empty;
+            foreach (var item in objQueue)
+            {
+                mensaje = mensaje + " " + item;
+            }
+            TxtQueue.Text = mensaje;
+        }
     }
 }

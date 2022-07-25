@@ -52,6 +52,8 @@
             this.LblIdentificacion = new System.Windows.Forms.Label();
             this.BtnLinkedList = new System.Windows.Forms.Button();
             this.TxtLinkedList = new System.Windows.Forms.TextBox();
+            this.BtnQueue = new System.Windows.Forms.Button();
+            this.TxtQueue = new System.Windows.Forms.TextBox();
             this.GrbPractica.SuspendLayout();
             this.GrbPracticaGenericos.SuspendLayout();
             this.SuspendLayout();
@@ -273,11 +275,30 @@
             this.TxtLinkedList.Size = new System.Drawing.Size(188, 23);
             this.TxtLinkedList.TabIndex = 11;
             // 
+            // BtnQueue
+            // 
+            this.BtnQueue.Location = new System.Drawing.Point(474, 218);
+            this.BtnQueue.Name = "BtnQueue";
+            this.BtnQueue.Size = new System.Drawing.Size(75, 23);
+            this.BtnQueue.TabIndex = 12;
+            this.BtnQueue.Text = "Queue";
+            this.BtnQueue.UseVisualStyleBackColor = true;
+            this.BtnQueue.Click += new System.EventHandler(this.BtnQueue_Click);
+            // 
+            // TxtQueue
+            // 
+            this.TxtQueue.Location = new System.Drawing.Point(582, 218);
+            this.TxtQueue.Name = "TxtQueue";
+            this.TxtQueue.Size = new System.Drawing.Size(186, 23);
+            this.TxtQueue.TabIndex = 13;
+            // 
             // FrmMainTaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 582);
+            this.Controls.Add(this.TxtQueue);
+            this.Controls.Add(this.BtnQueue);
             this.Controls.Add(this.TxtLinkedList);
             this.Controls.Add(this.BtnLinkedList);
             this.Controls.Add(this.GrbPractica);
@@ -324,5 +345,7 @@
         private System.Windows.Forms.Button BtnObjeto;
         private System.Windows.Forms.Button BtnLinkedList;
         private System.Windows.Forms.TextBox TxtLinkedList;
+        private System.Windows.Forms.Button BtnQueue;
+        private System.Windows.Forms.TextBox TxtQueue;
     }
 }
