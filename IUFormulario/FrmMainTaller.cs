@@ -254,5 +254,20 @@ namespace IUFormulario
             }
             TxtStack.Text = mensaje;
         }
+
+        private void BtnDictionary_Click(object sender, EventArgs e)
+        {
+            var objDictionary = LogicaNegocio.Lista.Diccionario();
+            string mensajeClaves = string.Empty;
+            string mensajeValores = string.Empty;
+            string mensaje = string.Empty;
+            foreach (KeyValuePair<string,int> item in objDictionary)
+            {                 
+                mensajeClaves = mensajeClaves + " " + item.Key.ToString();
+                mensajeValores = mensajeValores + " " + item.Value.ToString();
+            }            
+            TxtDictionaryKey.Text = mensajeClaves;
+            TxtDictionaryValue.Text = mensajeValores;
+        }
     }
 }

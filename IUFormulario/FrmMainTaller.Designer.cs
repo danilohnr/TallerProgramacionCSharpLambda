@@ -56,6 +56,9 @@
             this.TxtQueue = new System.Windows.Forms.TextBox();
             this.BtnStack = new System.Windows.Forms.Button();
             this.TxtStack = new System.Windows.Forms.TextBox();
+            this.BtnDictionary = new System.Windows.Forms.Button();
+            this.TxtDictionaryKey = new System.Windows.Forms.TextBox();
+            this.TxtDictionaryValue = new System.Windows.Forms.TextBox();
             this.GrbPractica.SuspendLayout();
             this.GrbPracticaGenericos.SuspendLayout();
             this.SuspendLayout();
@@ -262,7 +265,7 @@
             // 
             // BtnLinkedList
             // 
-            this.BtnLinkedList.Location = new System.Drawing.Point(474, 189);
+            this.BtnLinkedList.Location = new System.Drawing.Point(474, 150);
             this.BtnLinkedList.Name = "BtnLinkedList";
             this.BtnLinkedList.Size = new System.Drawing.Size(75, 23);
             this.BtnLinkedList.TabIndex = 10;
@@ -272,14 +275,14 @@
             // 
             // TxtLinkedList
             // 
-            this.TxtLinkedList.Location = new System.Drawing.Point(580, 188);
+            this.TxtLinkedList.Location = new System.Drawing.Point(580, 149);
             this.TxtLinkedList.Name = "TxtLinkedList";
-            this.TxtLinkedList.Size = new System.Drawing.Size(188, 23);
+            this.TxtLinkedList.Size = new System.Drawing.Size(186, 23);
             this.TxtLinkedList.TabIndex = 11;
             // 
             // BtnQueue
             // 
-            this.BtnQueue.Location = new System.Drawing.Point(474, 218);
+            this.BtnQueue.Location = new System.Drawing.Point(474, 179);
             this.BtnQueue.Name = "BtnQueue";
             this.BtnQueue.Size = new System.Drawing.Size(75, 23);
             this.BtnQueue.TabIndex = 12;
@@ -289,14 +292,14 @@
             // 
             // TxtQueue
             // 
-            this.TxtQueue.Location = new System.Drawing.Point(580, 217);
+            this.TxtQueue.Location = new System.Drawing.Point(580, 178);
             this.TxtQueue.Name = "TxtQueue";
             this.TxtQueue.Size = new System.Drawing.Size(186, 23);
             this.TxtQueue.TabIndex = 13;
             // 
             // BtnStack
             // 
-            this.BtnStack.Location = new System.Drawing.Point(474, 248);
+            this.BtnStack.Location = new System.Drawing.Point(474, 209);
             this.BtnStack.Name = "BtnStack";
             this.BtnStack.Size = new System.Drawing.Size(75, 23);
             this.BtnStack.TabIndex = 14;
@@ -306,16 +309,43 @@
             // 
             // TxtStack
             // 
-            this.TxtStack.Location = new System.Drawing.Point(580, 248);
+            this.TxtStack.Location = new System.Drawing.Point(580, 209);
             this.TxtStack.Name = "TxtStack";
             this.TxtStack.Size = new System.Drawing.Size(186, 23);
             this.TxtStack.TabIndex = 15;
+            // 
+            // BtnDictionary
+            // 
+            this.BtnDictionary.Location = new System.Drawing.Point(474, 238);
+            this.BtnDictionary.Name = "BtnDictionary";
+            this.BtnDictionary.Size = new System.Drawing.Size(75, 23);
+            this.BtnDictionary.TabIndex = 16;
+            this.BtnDictionary.Text = "Dictionary";
+            this.BtnDictionary.UseVisualStyleBackColor = true;
+            this.BtnDictionary.Click += new System.EventHandler(this.BtnDictionary_Click);
+            // 
+            // TxtDictionaryKey
+            // 
+            this.TxtDictionaryKey.Location = new System.Drawing.Point(580, 239);
+            this.TxtDictionaryKey.Name = "TxtDictionaryKey";
+            this.TxtDictionaryKey.Size = new System.Drawing.Size(186, 23);
+            this.TxtDictionaryKey.TabIndex = 17;
+            // 
+            // TxtDictionaryValue
+            // 
+            this.TxtDictionaryValue.Location = new System.Drawing.Point(580, 268);
+            this.TxtDictionaryValue.Name = "TxtDictionaryValue";
+            this.TxtDictionaryValue.Size = new System.Drawing.Size(186, 23);
+            this.TxtDictionaryValue.TabIndex = 18;
             // 
             // FrmMainTaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 582);
+            this.Controls.Add(this.TxtDictionaryValue);
+            this.Controls.Add(this.TxtDictionaryKey);
+            this.Controls.Add(this.BtnDictionary);
             this.Controls.Add(this.TxtStack);
             this.Controls.Add(this.BtnStack);
             this.Controls.Add(this.TxtQueue);
@@ -370,5 +400,8 @@
         private System.Windows.Forms.TextBox TxtQueue;
         private System.Windows.Forms.Button BtnStack;
         private System.Windows.Forms.TextBox TxtStack;
+        private System.Windows.Forms.Button BtnDictionary;
+        private System.Windows.Forms.TextBox TxtDictionaryKey;
+        private System.Windows.Forms.TextBox TxtDictionaryValue;
     }
 }
