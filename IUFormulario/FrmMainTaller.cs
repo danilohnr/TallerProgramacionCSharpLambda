@@ -276,5 +276,25 @@ namespace IUFormulario
             int resultado = objLambda.LambdaSuma(2,6);
             TxtLambdaSuma.Text = resultado.ToString();
         }
+
+        private void BtnLambdaMayor_Click(object sender, EventArgs e)
+        {
+            var objLambda = new LogicaNegocio.Lambda();
+            int resultado = objLambda.LambdaMayorNumeros(2, 6);
+            TxtLambdaMayor.Text = resultado.ToString();
+        }
+
+        private void BtnLambdaPares_Click(object sender, EventArgs e)
+        {
+            var objLambda = new LogicaNegocio.Lambda();
+            //var resultado = objLambda.ObtenerPares();
+            IEnumerable<int> resultado = objLambda.ObtenerPares();
+            string mensaje = string.Empty;
+            foreach (var item in resultado)
+            {
+                mensaje = mensaje + " " + item.ToString();
+            }
+            TxtLambdaPares.Text = mensaje;
+        }
     }
 }
