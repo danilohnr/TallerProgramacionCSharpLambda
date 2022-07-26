@@ -59,8 +59,12 @@
             this.BtnDictionary = new System.Windows.Forms.Button();
             this.TxtDictionaryKey = new System.Windows.Forms.TextBox();
             this.TxtDictionaryValue = new System.Windows.Forms.TextBox();
+            this.GbrPractica7 = new System.Windows.Forms.GroupBox();
+            this.BtnLambdaSuma = new System.Windows.Forms.Button();
+            this.TxtLambdaSuma = new System.Windows.Forms.TextBox();
             this.GrbPractica.SuspendLayout();
             this.GrbPracticaGenericos.SuspendLayout();
+            this.GbrPractica7.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnConsulta
@@ -338,11 +342,40 @@
             this.TxtDictionaryValue.Size = new System.Drawing.Size(186, 23);
             this.TxtDictionaryValue.TabIndex = 18;
             // 
+            // GbrPractica7
+            // 
+            this.GbrPractica7.Controls.Add(this.TxtLambdaSuma);
+            this.GbrPractica7.Controls.Add(this.BtnLambdaSuma);
+            this.GbrPractica7.Location = new System.Drawing.Point(98, 523);
+            this.GbrPractica7.Name = "GbrPractica7";
+            this.GbrPractica7.Size = new System.Drawing.Size(690, 100);
+            this.GbrPractica7.TabIndex = 19;
+            this.GbrPractica7.TabStop = false;
+            this.GbrPractica7.Text = "Practica 7";
+            // 
+            // BtnLambdaSuma
+            // 
+            this.BtnLambdaSuma.Location = new System.Drawing.Point(30, 25);
+            this.BtnLambdaSuma.Name = "BtnLambdaSuma";
+            this.BtnLambdaSuma.Size = new System.Drawing.Size(95, 23);
+            this.BtnLambdaSuma.TabIndex = 0;
+            this.BtnLambdaSuma.Text = "LambdaSuma";
+            this.BtnLambdaSuma.UseVisualStyleBackColor = true;
+            this.BtnLambdaSuma.Click += new System.EventHandler(this.BtnLambdaSuma_Click);
+            // 
+            // TxtLambdaSuma
+            // 
+            this.TxtLambdaSuma.Location = new System.Drawing.Point(150, 25);
+            this.TxtLambdaSuma.Name = "TxtLambdaSuma";
+            this.TxtLambdaSuma.Size = new System.Drawing.Size(100, 23);
+            this.TxtLambdaSuma.TabIndex = 1;
+            // 
             // FrmMainTaller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 582);
+            this.ClientSize = new System.Drawing.Size(800, 635);
+            this.Controls.Add(this.GbrPractica7);
             this.Controls.Add(this.TxtDictionaryValue);
             this.Controls.Add(this.TxtDictionaryKey);
             this.Controls.Add(this.BtnDictionary);
@@ -365,6 +398,8 @@
             this.GrbPractica.ResumeLayout(false);
             this.GrbPractica.PerformLayout();
             this.GrbPracticaGenericos.ResumeLayout(false);
+            this.GbrPractica7.ResumeLayout(false);
+            this.GbrPractica7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,5 +438,8 @@
         private System.Windows.Forms.Button BtnDictionary;
         private System.Windows.Forms.TextBox TxtDictionaryKey;
         private System.Windows.Forms.TextBox TxtDictionaryValue;
+        private System.Windows.Forms.GroupBox GbrPractica7;
+        private System.Windows.Forms.Button BtnLambdaSuma;
+        private System.Windows.Forms.TextBox TxtLambdaSuma;
     }
 }

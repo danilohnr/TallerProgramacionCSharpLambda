@@ -269,5 +269,12 @@ namespace IUFormulario
             TxtDictionaryKey.Text = mensajeClaves;
             TxtDictionaryValue.Text = mensajeValores;
         }
+
+        private void BtnLambdaSuma_Click(object sender, EventArgs e)
+        {
+            var objLambda = new LogicaNegocio.Lambda();
+            int resultado = objLambda.LambdaSuma(2,6);
+            TxtLambdaSuma.Text = resultado.ToString();
+        }
     }
 }
